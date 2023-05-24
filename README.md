@@ -79,46 +79,34 @@
 </head>
 
 <body>
-    <h1 style="color: coral; font-family: Helvetica, Arial, sans-serif; padding-top: 20px; font-size: 50px;">
-        <center>Forest Fire Prediction</center>
-    </h1>
+    # Forest Fire Prediction
 
-    <p
-        style="font-size: 25px; font-family: Montserrat, Arial, sans-serif; text-indent: 10%; padding: 5%; padding-top: 0; line-height: 1.8; color: white;">
-        Forest fires are a devastating natural phenomenon that can occur under specific conditions. One crucial factor
-        is temperature, as high temperatures increase the likelihood of ignition and rapid spread. Oxygen availability
-        also plays a significant role, as it fuels the combustion process. Dry conditions with low humidity further
-        exacerbate the risk, as moisture content in vegetation decreases, making it more susceptible to catching fire.
-        The combination of these factors creates a volatile environment where even a small spark can lead to a
-        destructive and uncontrollable forest fire.
-    </p>
+    Forest fires are a devastating natural phenomenon that can occur under specific conditions. One crucial factor is temperature, as high temperatures increase the likelihood of ignition and rapid spread. Oxygen availability also plays a significant role, as it fuels the combustion process. Dry conditions with low humidity further exacerbate the risk, as moisture content in vegetation decreases, making it more susceptible to catching fire. The combination of these factors creates a volatile environment where even a small spark can lead to a destructive and uncontrollable forest fire.
 
     <form id="myform" method="POST">
         <div class="form-row">
             <div class="form-group">
-                <label for="temperature" class="form-label" style="font-family: Helvetica;color:whitesmoke;">Temperature
-                    in &deg;C</label>
-                <input type="text" name="temperature" id="temperature" placeholder="" class="line-input"
-                    style="color:whitesmoke;" />
+                **Temperature in °C**
+                <input type="text" name="temperature" id="temperature" placeholder="" class="line-input" />
             </div>
 
             <div class="form-group">
-                <label for="oxygen" class="form-label" style="font-family: Helvetica;color:whitesmoke;">Oxygen in
-                    ppm</label>
-                <input type="text" name="oxygen" id="oxygen" placeholder="" class="line-input"
-                    style="color:whitesmoke;" />
+                **Oxygen in ppm**
+                <input type="text" name="oxygen" id="oxygen" placeholder="" class="line-input" />
             </div>
 
             <div class="form-group">
-                <label for="humidity" class="form-label"
-                    style="font-family: Helvetica; color:whitesmoke;">Humidity</label>
-                <input type="text" name="humidity" id="humidity" placeholder="" class="line-input"
-                    style="color:whitesmoke;" />
+                **Humidity**
+                <input type="text" name="humidity" id="humidity" placeholder="" class="line-input" />
             </div>
         </div>
     </form>
     
-    <button id="predict"><center>Predict</center></button>
+    [Predict](#predict)
+    
+    ## Result
+    ---
+    [//]: # (The result will be displayed here)
     <h2 id="result" style="font-family: 'Caveat', cursive; font-size: 50px; color:whitesmoke; text-align: center;"></h2>
 
     <script type="text/javascript">
